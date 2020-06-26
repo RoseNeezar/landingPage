@@ -2,11 +2,12 @@ export default {
   colors: {
     black: "#000",
     white: "#fff",
+    red: "#e43b27",
   },
   fontFamilyHeader: "Georgia, Times New Roman, Times, serif",
-  fontFamily: "Poppins, sans-serif",
+  fontFamily: "Poppins-Regular,sans-serif",
   navbar: {
-    font: "1.2rem",
+    fontSize: "1.4rem",
   },
   home: {
     headerColor1: "rgba(255,255,255,0.85)",
