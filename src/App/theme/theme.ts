@@ -4,7 +4,7 @@ export default {
     white: "#fff",
     red: "#e43b27",
   },
-  fontFamilyHeader: "Georgia, Times New Roman, Times, serif",
+  fontFamilyHeader: "Georgia, Times, serif",
   fontFamily: "Poppins-Regular,sans-serif",
   navbar: {
     fontSize: "1.4rem",
@@ -13,9 +13,9 @@ export default {
     headerColor1: "rgba(255,255,255,0.85)",
     headerColor2: "#fff",
     headerColor3: "rgba(255,255,255,0.65)",
-    headerFont1: "2rem",
-    headerFont2: "4.2rem",
-    headerFont3: "1.6rem",
+    headerFont1: "2.4rem",
+    headerFont2: "5.6rem",
+    headerFont3: "2rem",
   },
   coreValues: {
     headerColor: "#000",

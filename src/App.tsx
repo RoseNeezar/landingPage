@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import NavbarLogo from "./App/svg/navbarLogo.svg";
+import Home from "./App/features/home";
 
 const NavbarWrapper = styled.div`
   position: fixed;
@@ -11,12 +12,13 @@ const NavbarWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  /* z-index: 5; */
 `;
 const NavbarContentWrapper = styled.div`
   display: flex;
   flex-direction: row;
   width: 130rem;
-  padding: 0 2rem;
+  padding: 0 3.2rem;
 `;
 
 const NavbarLogoWrapper = styled.div`
@@ -27,7 +29,7 @@ const NavbarLogoWrapper = styled.div`
 const NavbarText = styled.div`
   font-size: ${({ theme }) => theme.navbar.fontSize};
   color: ${({ theme }) => theme.colors.white};
-
+  letter-spacing: 0.1rem;
   &:hover {
     color: ${({ theme }) => theme.colors.red};
   }
@@ -41,7 +43,7 @@ const NavbarNavWrapper = styled.ul`
   align-items: center;
 `;
 const NavbarNavItem = styled.li`
-  padding-left: 2vw;
+  padding-left: 1.8vw;
   cursor: pointer;
 `;
 
@@ -72,6 +74,7 @@ const App = () => {
           </NavbarNavWrapper>
         </NavbarContentWrapper>
       </NavbarWrapper>
+      <Home />
     </>
   );
 };
