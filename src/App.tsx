@@ -88,13 +88,13 @@ const App = () => {
         <title>Doo Holdings Group | Build Your Financial Enterprise</title>
         <link rel="dev" href="#" />
       </Helmet>
-      {/* <DisclaimerModal
+      <DisclaimerModal
         style={ModalLayout}
         isOpen={openModal}
         ariaHideApp={false}
       >
         <Disclaimer />
-      </DisclaimerModal> */}
+      </DisclaimerModal>
       <NavbarWrapper>
         <NavbarContentWrapper>
           <NavbarLogoWrapper>
