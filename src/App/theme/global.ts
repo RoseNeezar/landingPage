@@ -15,7 +15,8 @@ export default createGlobalStyle`
      body {
        box-sizing: border-box;
        font-family: ${theme.fontFamily};
-       background-color: ${theme.colors.black};
+       background-color: ${theme.colors.white};
+       line-height: 1.5;
      }
    `}
 `;
