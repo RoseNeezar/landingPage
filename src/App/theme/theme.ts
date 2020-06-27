@@ -9,6 +9,20 @@ export default {
   navbar: {
     fontSize: "1.4rem",
   },
+  disclaimer: {
+    fontFamily: "Segoe UI, Tahoma, Geneva, Verdana, sans-serif",
+    bgColor: "hsla(0,0%,100%,.9)",
+    fontHeader: "1.4rem",
+    fontLanguage: "1.6rem",
+    headerColor: "#3333333",
+    descriptionFont: "1.4rem",
+    descriptionColor: "#666",
+    redButton: "#d90000",
+    redButtonHover: "#ff0f0f",
+    whiteButton: "#f5f5f5",
+    whiteButtonHover: "#fff",
+    gray: "#999",
+  },
   home: {
     headerColor1: "rgba(255,255,255,0.85)",
     headerColor2: "#fff",

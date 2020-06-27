@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import NavbarLogo from "./App/svg/navbarLogo.svg";
 import Home from "./App/features/home";
+import Disclaimer from "./App/features/disclaimer";
+import DisclaimerModal from "react-modal";
+import { RootStoreContext } from "./App/store/rootStore";
+import { observer } from "mobx-react-lite";
+import { Helmet } from "react-helmet";
 
 const NavbarWrapper = styled.div`
   position: fixed;
@@ -47,9 +52,47 @@ const NavbarNavItem = styled.li`
   cursor: pointer;
 `;
 
+const ModalLayout = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    transform: "translate(-50%, -36rem)",
+    width: "68rem",
+    borderRadius: "1rem",
+    backgroundColor: "transparent",
+    border: "none",
+    display: "flex",
+    justifyContent: "center",
+  },
+  overlay: {
+    top: "0%",
+    left: "0%",
+    right: "0",
+    bottom: "0",
+    overflow: "auto",
+    backgroundColor: "rgba(0,0,0,0.7)",
+  },
+};
+
 const App = () => {
+  const rootStore = useContext(RootStoreContext);
+  const { openModal } = rootStore.modalStore;
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Doo Holdings Group | Build Your Financial Enterprise</title>
+        <link rel="dev" href="#" />
+      </Helmet>
+      <DisclaimerModal
+        style={ModalLayout}
+        isOpen={openModal}
+        ariaHideApp={false}
+      >
+        <Disclaimer />
+      </DisclaimerModal>
       <NavbarWrapper>
         <NavbarContentWrapper>
           <NavbarLogoWrapper>
@@ -79,4 +122,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default observer(App);

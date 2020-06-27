@@ -5,7 +5,7 @@ import { styledSystemC } from "../../utils/StyledSystem";
 interface IStyle {
   header1?: boolean;
   header2?: boolean;
-  content?: boolean;
+  description?: boolean;
 }
 const HomeLayout = styled.section`
   background: url(https://www.doo.hk/static/media/1.775145e5.png) no-repeat
@@ -47,7 +47,7 @@ const HomeTextCSS = styled.div`
         line-height: 1.22;
       `}
     ${(props: IStyle) =>
-      props.content &&
+      props.description &&
       css`
         font-size: ${({ theme }) => theme.home.headerFont3};
         color: ${({ theme }) => theme.home.headerColor3};
@@ -65,7 +65,7 @@ const Home = () => {
           <HomeText header2 p="2rem 0">
             Build Your Financial Execution to the Next Level
           </HomeText>
-          <HomeText content>
+          <HomeText description>
             Doo Holding Group was officially incorporated in Hong Kong since
             2014, a financial services group with cutting-edge technology and
             solutions. Doo Holdings is globally located and branches in Hong
