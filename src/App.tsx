@@ -7,6 +7,7 @@ import DisclaimerModal from "react-modal";
 import { RootStoreContext } from "./App/store/rootStore";
 import { observer } from "mobx-react-lite";
 import { Helmet } from "react-helmet";
+import Brands from "./App/features/brands";
 
 const NavbarWrapper = styled.div`
   position: fixed;
@@ -118,6 +119,7 @@ const App = () => {
         </NavbarContentWrapper>
       </NavbarWrapper>
       <Home />
+      <Brands />
     </>
   );
 };

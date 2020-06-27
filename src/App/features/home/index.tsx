@@ -8,11 +8,11 @@ interface IStyle {
   description?: boolean;
 }
 const HomeLayout = styled.section`
-  background: url(https://www.doo.hk/static/media/1.775145e5.png) no-repeat
+  background: #000 url(https://www.doo.hk/static/media/1.775145e5.png) no-repeat
     scroll 50% / cover;
   display: flex;
   justify-content: center;
-  height: 71rem;
+  display: block;
 `;
 const HomeContainer = styled.div`
   display: flex;

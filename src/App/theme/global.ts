@@ -7,15 +7,16 @@ export default createGlobalStyle`
      *::before {
        margin: 0;
        padding: 0;
-       box-sizing: inherit;
+       box-sizing: border-box;
      }
      html {
        font-size: 62.5%;
      }
      body {
-       box-sizing: border-box;
+       box-sizing: inherit;
        font-family: ${theme.fontFamily};
        background-color: ${theme.colors.white};
+       -webkit-font-smoothing: antialiased;
        line-height: 1.5;
      }
    `}
