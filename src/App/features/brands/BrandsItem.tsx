@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React, { FC, useState } from "react";
+import React, { FC } from "react";
 import styled, { css } from "styled-components";
 import Hoverable from "../../utils/hover/Hoverable";
 
