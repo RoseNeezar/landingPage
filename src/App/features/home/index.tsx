@@ -12,7 +12,7 @@ const HomeLayout = styled.section`
     scroll 50% / cover;
   display: flex;
   justify-content: center;
-  display: block;
+  height: 71rem;
 `;
 const HomeContainer = styled.div`
   display: flex;
