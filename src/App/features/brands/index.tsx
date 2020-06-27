@@ -12,21 +12,22 @@ const BrandsLayout = styled.section`
   overflow-y: hidden;
 `;
 const BrandsContainer = styled.div`
-  height: 100%;
   max-width: 130rem;
-  /* background-color: greenyellow; */
   padding: 0 2rem;
+  margin: 0 auto;
 `;
 const BrandsTextHeader = styled.div`
   font-size: ${({ theme }) => theme.brands.fontHeader};
-  margin-top: 4.5rem;
+  margin-top: 6.5rem;
   color: ${({ theme }) => theme.brands.headerColor};
 `;
 const BrandsItemContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0;
   height: 100%;
-  border-left: 0.1px solid #fff;
+  margin-top: -11rem;
+  border-left: 0.1rem solid hsla(0, 0%, 100%, 0.16);
 `;
 
 const Brands: FC = () => {

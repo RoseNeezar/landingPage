@@ -13,6 +13,7 @@ const HomeLayout = styled.section`
   display: flex;
   justify-content: center;
   height: 71rem;
+  margin: 0 auto;
 `;
 const HomeContainer = styled.div`
   display: flex;

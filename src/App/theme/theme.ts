@@ -34,6 +34,7 @@ export default {
   brands: {
     fontHeader: "4.265rem",
     headerColor: "hsla(0, 0%, 100%, 0.65)",
+    fontContent: "1.6rem",
   },
   coreValues: {
     headerColor: "#000",
