@@ -7,6 +7,8 @@ import DisclaimerModal from "react-modal";
 import { RootStoreContext } from "./App/store/rootStore";
 import { observer } from "mobx-react-lite";
 import { Helmet } from "react-helmet";
+import Brands from "./App/features/brands";
+import ScrollTo from "react-scroll-into-view";
 
 const NavbarWrapper = styled.div`
   position: fixed;
@@ -100,10 +102,14 @@ const App = () => {
           </NavbarLogoWrapper>
           <NavbarNavWrapper>
             <NavbarNavItem>
-              <NavbarText>Home</NavbarText>
+              <ScrollTo selector={"#home"}>
+                <NavbarText>Home</NavbarText>
+              </ScrollTo>
             </NavbarNavItem>
             <NavbarNavItem>
-              <NavbarText>Brands</NavbarText>
+              <ScrollTo selector={"#brands"}>
+                <NavbarText>Brands</NavbarText>
+              </ScrollTo>
             </NavbarNavItem>
             <NavbarNavItem>
               <NavbarText>Values</NavbarText>
@@ -117,7 +123,12 @@ const App = () => {
           </NavbarNavWrapper>
         </NavbarContentWrapper>
       </NavbarWrapper>
-      <Home />
+      <div id="home">
+        <Home />
+      </div>
+      <div id="brands">
+        <Brands />
+      </div>
     </>
   );
 };
