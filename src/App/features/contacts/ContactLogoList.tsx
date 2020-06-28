@@ -13,9 +13,10 @@ interface ILogoList {
   id: number;
   logoUrl: string;
   logoUrlHover: string;
+  link: string;
 }
 //check if hover change image
-const ContactLogoList: FC<ILogoList> = ({ logoUrl, logoUrlHover }) => {
+const ContactLogoList: FC<ILogoList> = ({ logoUrl, logoUrlHover, link }) => {
   const [hover, setHover] = useState(false);
 
   return (
@@ -25,13 +26,17 @@ const ContactLogoList: FC<ILogoList> = ({ logoUrl, logoUrlHover }) => {
     >
       <ListLink>
         {!hover ? (
-          <img style={{ maxWidth: "100%" }} src={logoUrl} alt="logo-footer" />
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <img style={{ maxWidth: "100%" }} src={logoUrl} alt="logo-footer" />
+          </a>
         ) : (
-          <img
-            style={{ maxWidth: "100%" }}
-            src={logoUrlHover}
-            alt="logo-footer-hover"
-          />
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <img
+              style={{ maxWidth: "100%" }}
+              src={logoUrlHover}
+              alt="logo-footer-hover"
+            />
+          </a>
         )}
       </ListLink>
     </ListFigure>

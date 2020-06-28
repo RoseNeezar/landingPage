@@ -201,6 +201,7 @@ const Contact = () => {
                 id={res.id}
                 logoUrl={res.url}
                 logoUrlHover={res.urlHover}
+                link={res.link}
               />
             );
           })}

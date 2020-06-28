@@ -41,21 +41,25 @@ export const LogoList = [
     id: 1,
     url: "https://www.doo.hk/static/media/DooPrime.4925b672.svg",
     urlHover: "https://www.doo.hk/static/media/DooPrimeColor.afdec70d.svg",
+    link: "https://www.dooprime.com/",
   },
   {
     id: 2,
     url: "https://www.doo.hk/static/media/DooClearing.c10e1125.svg",
     urlHover: "https://www.doo.hk/static/media/DooClearingColor.58366c00.svg",
+    link: "https://www.dooclearing.com/",
   },
   {
     id: 3,
     url: "https://www.doo.hk/static/media/DooTech.e98c2c6d.svg",
     urlHover: "https://www.doo.hk/static/media/DooTechColor.02eb2cd3.svg",
+    link: "https://doo.tech/",
   },
   {
     id: 4,
     url: "https://www.doo.hk/static/media/DooExchange.c93d73af.svg",
     urlHover: "https://www.doo.hk/static/media/DooExchangeColor.6744a7ac.svg",
+    link: "https://www.dooexchange.com/",
   },
 ];
 
