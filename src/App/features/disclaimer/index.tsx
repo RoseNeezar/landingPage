@@ -57,7 +57,7 @@ const DisclaimerContent = styled.div`
 `;
 
 const DisclaimerScrollContent = styled.div`
-  max-height: 32vh;
+  max-height: 43.7rem;
   overflow-y: auto;
   margin-right: 0.3rem;
   margin-bottom: 1.6rem;
