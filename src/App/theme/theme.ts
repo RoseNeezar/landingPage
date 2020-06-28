@@ -1,3 +1,4 @@
+//I usually start with themes, it gets added over time, some redundant but easier later to do dark/light mode
 export default {
   colors: {
     black: "#000",
@@ -63,6 +64,7 @@ export default {
     color: "#fff",
     color1: "rgba(255,255,255,0.60)",
     color2: "rgba(255,255,255,0.45)",
+    headerColor: "hsla(0,0%,100%,.6)",
     red: "#eb4d33",
     fontHeader: "2rem",
     fontContent1: "1.4rem",
