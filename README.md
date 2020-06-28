@@ -4,10 +4,6 @@ Landing Page App
 - Typescript > 3.0
 - styled components
 
-#Start App
-##yarn
-##yarn start
-
 This app divides the page into sections :-
 
 -brands
@@ -18,3 +14,10 @@ This app divides the page into sections :-
 -home
 
 styling uses styled-component theming with typescript support and also styled-system for adjusting position of element
+
+#Start App
+##yarn
+##yarn start
+
+#Live App
+https://neezar-landingpage-submission.netlify.app/
