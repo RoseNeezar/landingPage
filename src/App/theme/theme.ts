@@ -4,6 +4,13 @@ export default {
     white: "#fff",
     red: "#e43b27",
   },
+  fontSize: {
+    small: "1.2rem",
+    normal: "1.6rem",
+  },
+  breakpoints: {
+    tablet: "only screen and (max-width:78rem)",
+  },
   fontFamilyHeader: "Georgia, Times, serif",
   fontFamily: "Poppins-Regular,sans-serif",
   navbar: {
@@ -34,7 +41,7 @@ export default {
   brands: {
     fontHeader: "4.265rem",
     headerColor: "hsla(0, 0%, 100%, 0.65)",
-    fontContent: "1.6rem",
+    fontContent: "1.2rem",
   },
   coreValues: {
     headerColor: "#000",

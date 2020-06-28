@@ -26,7 +26,7 @@ const BrandsItemContainer = styled.div`
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 0;
   height: 100%;
-  margin-top: -11rem;
+  margin-top: -13rem;
   border-left: 0.1rem solid hsla(0, 0%, 100%, 0.16);
 `;
 
@@ -44,6 +44,7 @@ const Brands: FC = () => {
                 text={res.text}
                 mainImage={res.mainImage}
                 bgImage={res.bgImage}
+                linkSite={res.links}
               />
             );
           })}
