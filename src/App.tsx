@@ -11,6 +11,7 @@ import Brands from "./App/features/brands";
 import ScrollTo from "react-scroll-into-view";
 import CoreValues from "./App/features/core-values";
 import GlobalOffices from "./App/features/global-offices";
+import Contact from "./App/features/contacts";
 
 const NavbarWrapper = styled.div`
   position: fixed;
@@ -101,7 +102,7 @@ const App = () => {
       <NavbarWrapper>
         <NavbarContentWrapper>
           <NavbarLogoWrapper>
-            <img src={NavbarLogo} alt="doo holding logo" />
+            <img src={NavbarLogo} alt="doo-holding-logo" />
           </NavbarLogoWrapper>
           <NavbarNavWrapper>
             <NavbarNavItem>
@@ -125,7 +126,9 @@ const App = () => {
               </ScrollTo>
             </NavbarNavItem>
             <NavbarNavItem>
-              <NavbarText>Contact us</NavbarText>
+              <ScrollTo selector={"#contact"}>
+                <NavbarText>Contact us</NavbarText>
+              </ScrollTo>
             </NavbarNavItem>
           </NavbarNavWrapper>
         </NavbarContentWrapper>
@@ -141,6 +144,9 @@ const App = () => {
       </div>
       <div id="global">
         <GlobalOffices />
+      </div>
+      <div id="contact">
+        <Contact />
       </div>
     </>
   );
