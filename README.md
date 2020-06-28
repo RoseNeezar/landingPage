@@ -1,24 +1,26 @@
-Landing Page App
+# Landing Page App
 
-- CRA
-- Typescript > 3.0
-- styled components
+## CRA
 
-## This app divides the page into sections :-
+## Typescript > 3.0
 
-# brands
+## styled components
 
-# contacts
+### styling uses styled-component theming with typescript support and also styled-system for adjusting position of element
 
-# core values
+# This app divides the page into sections :-
 
-# disclaimer (Modal)
+### brands
 
-# global offices
+### contacts
 
-# home
+### core values
 
-styling uses styled-component theming with typescript support and also styled-system for adjusting position of element
+### disclaimer (Modal)
+
+### global offices
+
+### home
 
 **Start App.**
 
