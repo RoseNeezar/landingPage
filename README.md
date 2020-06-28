@@ -6,18 +6,29 @@ Landing Page App
 
 This app divides the page into sections :-
 
--brands
--contacts
--core values
--disclaimer (Modal)
--global offices
--home
+## brands
+
+## contacts
+
+## core values
+
+## disclaimer (Modal)
+
+## global offices
+
+## home
 
 styling uses styled-component theming with typescript support and also styled-system for adjusting position of element
 
-#Start App
-##yarn
-##yarn start
+1.  **Start App.**
 
-#Live App
+    Navigate into your new site’s directory and start it up.
+
+    ```shell
+    yarn
+    yarn start
+    ```
+
+## Live App
+
 https://neezar-landingpage-submission.netlify.app/
