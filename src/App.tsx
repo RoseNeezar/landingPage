@@ -10,6 +10,7 @@ import { Helmet } from "react-helmet";
 import Brands from "./App/features/brands";
 import ScrollTo from "react-scroll-into-view";
 import CoreValues from "./App/features/core-values";
+import GlobalOffices from "./App/features/global-offices";
 
 const NavbarWrapper = styled.div`
   position: fixed;
@@ -119,10 +120,12 @@ const App = () => {
               </ScrollTo>
             </NavbarNavItem>
             <NavbarNavItem>
-              <NavbarText>Offices</NavbarText>
+              <ScrollTo selector={"#global"}>
+                <NavbarText>Offices</NavbarText>
+              </ScrollTo>
             </NavbarNavItem>
             <NavbarNavItem>
-              <NavbarText>Contact Us</NavbarText>
+              <NavbarText>Contact us</NavbarText>
             </NavbarNavItem>
           </NavbarNavWrapper>
         </NavbarContentWrapper>
@@ -135,6 +138,9 @@ const App = () => {
       </div>
       <div id="core">
         <CoreValues />
+      </div>
+      <div id="global">
+        <GlobalOffices />
       </div>
     </>
   );

@@ -13,7 +13,7 @@ const BrandsLayout = styled.section`
 `;
 const BrandsContainer = styled.div`
   max-width: 130rem;
-  padding: 0 2rem;
+  padding: 0 3.2rem;
   margin: 0 auto;
 `;
 const BrandsTextHeader = styled.div`

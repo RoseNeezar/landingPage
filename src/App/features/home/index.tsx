@@ -19,7 +19,7 @@ const HomeContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 3.2rem;
   height: 100%;
   max-width: 130rem;
 `;
