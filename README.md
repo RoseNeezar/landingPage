@@ -22,7 +22,7 @@
 
 ### home
 
-**Start App.**
+# Start App
 
     ```shell
     yarn
