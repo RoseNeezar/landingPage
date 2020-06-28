@@ -1,6 +1,5 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import styled from "styled-components";
-import Hoverable from "../../utils/hover/Hoverable";
 
 const ListFigure = styled.div`
   padding: 2rem 0;
@@ -17,22 +16,23 @@ interface ILogoList {
 }
 
 const ContactLogoList: FC<ILogoList> = ({ logoUrl, logoUrlHover }) => {
+  const [hover, setHover] = useState(false);
+
   return (
-    <ListFigure>
+    <ListFigure
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+    >
       <ListLink>
-        <Hoverable>
-          {(isHover: any) =>
-            !isHover ? (
-              <img
-                style={{ maxWidth: "100%" }}
-                src={logoUrl}
-                alt="logo-footer"
-              />
-            ) : (
-              <img src={logoUrlHover} alt="logo-footer-hover" />
-            )
-          }
-        </Hoverable>
+        {!hover ? (
+          <img style={{ maxWidth: "100%" }} src={logoUrl} alt="logo-footer" />
+        ) : (
+          <img
+            style={{ maxWidth: "100%" }}
+            src={logoUrlHover}
+            alt="logo-footer-hover"
+          />
+        )}
       </ListLink>
     </ListFigure>
   );

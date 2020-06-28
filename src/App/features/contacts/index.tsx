@@ -1,6 +1,10 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 import React from "react";
 import styled, { css } from "styled-components";
 import { styledSystemC } from "../../utils/StyledSystem";
+import { LogoList, DescriptionList } from "../../data/data";
+import ContactLogoList from "./ContactLogoList";
+import ContactDescriptionList from "./ContactDescriptionList";
 
 interface IStyle {
   aboutUs?: boolean;
@@ -69,6 +73,22 @@ const ContactLinksCSS = styled.a`
   }
 `;
 const ContactLinks = styledSystemC(ContactLinksCSS);
+
+const ContactLogoListWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 3.2rem;
+  height: 100%;
+  @media ${({ theme }) => theme.breakpoints.tablet} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+`;
+const ContactDescriptionWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 3.2rem;
+`;
+
 const Contact = () => {
   return (
     <ContactLayout>
@@ -173,6 +193,24 @@ const Contact = () => {
             </ContactSupportContent>
           </ContactSupportContainer>
         </ContactHeader>
+        <ContactLogoListWrapper>
+          {LogoList.map((res) => {
+            return (
+              <ContactLogoList
+                key={res.id}
+                id={res.id}
+                logoUrl={res.url}
+                logoUrlHover={res.urlHover}
+              />
+            );
+          })}
+        </ContactLogoListWrapper>
+        <hr />
+        <ContactDescriptionWrapper>
+          {DescriptionList.map((res) => {
+            return <ContactDescriptionList key={res.id} data={res} />;
+          })}
+        </ContactDescriptionWrapper>
       </ContactContainer>
     </ContactLayout>
   );
