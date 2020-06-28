@@ -8,6 +8,8 @@
 
 ### styling uses styled-component theming with typescript support and also styled-system for adjusting position of element
 
+### Intended for browser view only, responsive on core values and contact logo with css grid
+
 # This app divides the page into sections :-
 
 ### brands
