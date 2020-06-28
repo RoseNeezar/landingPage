@@ -114,21 +114,21 @@ const CoreValues = () => {
                 Value
               </CoreText>
               <CoreItemLeftInnerContent>
-                <CoreText header3 mb="1rem">
+                <CoreText header3 mt="2rem" mb="-1rem">
                   Outstanding
                 </CoreText>
                 <CoreText description>
                   We value skill, intelligent and hard-work in our team to
                   achieve the best possible result.
                 </CoreText>
-                <CoreText header3 mb="1rem">
+                <CoreText header3 mb="-1rem">
                   Multi-asset
                 </CoreText>
                 <CoreText description>
                   We value multiple-asset development to provide cost-effective
                   one stop solutions to our clients.
                 </CoreText>
-                <CoreText header3 mb="1rem">
+                <CoreText header3 mb="-1rem">
                   Integrity
                 </CoreText>
                 <CoreText description>
@@ -150,7 +150,7 @@ const CoreValues = () => {
                 <CoreText header2 mb="1.25rem">
                   Mission
                 </CoreText>
-                <CoreText description>
+                <CoreText description fontSize="1.6rem">
                   Establishing a financial ecosystem network that empowers our
                   clients to stay one step ahead.
                 </CoreText>
@@ -167,7 +167,7 @@ const CoreValues = () => {
                 <CoreText header2 mb="1.25rem">
                   Vision
                 </CoreText>
-                <CoreText description>
+                <CoreText description fontSize="1.6rem">
                   Brings global financial execution to the next level.
                 </CoreText>
               </CoreItemRightInnerContent>
