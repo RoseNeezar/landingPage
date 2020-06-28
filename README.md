@@ -4,6 +4,10 @@ Landing Page App
 - Typescript > 3.0
 - styled components
 
+#Start App
+##yarn
+##yarn start
+
 This app divides the page into sections :-
 
 -brands
