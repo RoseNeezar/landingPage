@@ -58,9 +58,6 @@ export default {
     red: "#e03323",
     tooltipColor: "#a3a3a3",
     tooltipFont: "1.2rem",
-    transition: "all .3s ease",
-    boxShadow: "0 2px 12px 0 rgba(0,0,0,.12)",
-    placeFont: "1.6rem",
   },
   contactUs: {
     color: "#fff",
