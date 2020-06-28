@@ -9,6 +9,7 @@ import { observer } from "mobx-react-lite";
 import { Helmet } from "react-helmet";
 import Brands from "./App/features/brands";
 import ScrollTo from "react-scroll-into-view";
+import CoreValues from "./App/features/core-values";
 
 const NavbarWrapper = styled.div`
   position: fixed;
@@ -19,7 +20,7 @@ const NavbarWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* z-index: 5; */
+  z-index: 5;
 `;
 const NavbarContentWrapper = styled.div`
   display: flex;
@@ -77,7 +78,8 @@ const ModalLayout = {
     backgroundColor: "rgba(0,0,0,0.7)",
   },
 };
-
+//scroll to library takes care of page moving from one section to another
+//modal only close if 'openModal' is false
 const App = () => {
   const rootStore = useContext(RootStoreContext);
   const { openModal } = rootStore.modalStore;
@@ -112,7 +114,9 @@ const App = () => {
               </ScrollTo>
             </NavbarNavItem>
             <NavbarNavItem>
-              <NavbarText>Values</NavbarText>
+              <ScrollTo selector={"#core"}>
+                <NavbarText>Values</NavbarText>
+              </ScrollTo>
             </NavbarNavItem>
             <NavbarNavItem>
               <NavbarText>Offices</NavbarText>
@@ -128,6 +132,9 @@ const App = () => {
       </div>
       <div id="brands">
         <Brands />
+      </div>
+      <div id="core">
+        <CoreValues />
       </div>
     </>
   );

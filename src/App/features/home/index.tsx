@@ -22,16 +22,15 @@ const HomeContainer = styled.div`
   padding: 0 2rem;
   height: 100%;
   max-width: 130rem;
-  /* background-color: green; */
 `;
 const HomeWrapper = styled.div`
-  /* background-color: purple; */
   width: 68%;
   padding: 18rem 0;
   height: 100%;
   display: flex;
   flex-direction: column;
 `;
+//styled components can insert props so each text can have specified use case
 const HomeTextCSS = styled.div`
   font-family: ${({ theme }) => theme.fontFamilyHeader};
     ${(props: IStyle) =>
@@ -54,7 +53,7 @@ const HomeTextCSS = styled.div`
         color: ${({ theme }) => theme.home.headerColor3};
       `};
 `;
-
+//styled-system is used for making small changes to positioning (it can do more, this is just my preferred way of using it)
 const HomeText = styledSystemC(HomeTextCSS);
 
 const Home = () => {
