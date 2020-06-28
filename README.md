@@ -1,10 +1,10 @@
 # Landing Page App
 
-## CRA
+### CRA
 
-## Typescript > 3.0
+### Typescript > 3.0
 
-## styled components
+### styled components
 
 ### styling uses styled-component theming with typescript support and also styled-system for adjusting position of element
 
