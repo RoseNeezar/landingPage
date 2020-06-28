@@ -4,25 +4,23 @@ Landing Page App
 - Typescript > 3.0
 - styled components
 
-This app divides the page into sections :-
+## This app divides the page into sections :-
 
-## brands
+# brands
 
-## contacts
+# contacts
 
-## core values
+# core values
 
-## disclaimer (Modal)
+# disclaimer (Modal)
 
-## global offices
+# global offices
 
-## home
+# home
 
 styling uses styled-component theming with typescript support and also styled-system for adjusting position of element
 
-1.  **Start App.**
-
-    Navigate into your new site’s directory and start it up.
+**Start App.**
 
     ```shell
     yarn
