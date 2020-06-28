@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 import styled from "styled-components";
-
+//typing for styled-component and style-systems
+//essentially I just wrapped methods/attribute from styled-component to style-system
 import {
   compose,
   buttonStyle,

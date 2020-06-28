@@ -9,7 +9,7 @@ export default {
     normal: "1.6rem",
   },
   breakpoints: {
-    tablet: "only screen and (max-width:78rem)",
+    tablet: "only screen and (max-width:780px)",
   },
   fontFamilyHeader: "Georgia, Times, serif",
   fontFamily: "Poppins-Regular,sans-serif",

@@ -4,6 +4,7 @@ import { RootStoreContext } from "../../store/rootStore";
 import { observer } from "mobx-react-lite";
 import { styledSystemC } from "../../utils/StyledSystem";
 
+//interface for styles prop only
 interface IStyle {
   shading?: boolean;
   language?: boolean;
