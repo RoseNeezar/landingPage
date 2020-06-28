@@ -1,3 +1,5 @@
+//base64 too long, better to put in data file
+//if the site have cors I could just make an axios call to each image and change image data into blob format
 export const BrandList = [
   {
     id: 1,

@@ -37,7 +37,7 @@ const ContactSupportContainer = styled.div`
 `;
 const ContactSupportContent = styled.div``;
 const ContactFigure = styled.figure``;
-
+//multiple type of text
 const ContactTextCSS = styled.div`
   ${(props: IStyle) =>
     props.aboutUs &&

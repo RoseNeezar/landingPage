@@ -14,7 +14,7 @@ interface ILogoList {
   logoUrl: string;
   logoUrlHover: string;
 }
-
+//check if hover change image
 const ContactLogoList: FC<ILogoList> = ({ logoUrl, logoUrlHover }) => {
   const [hover, setHover] = useState(false);
 

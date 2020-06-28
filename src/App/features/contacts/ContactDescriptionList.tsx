@@ -33,7 +33,7 @@ const ListLink = styled.a`
   text-decoration: none;
   color: ${({ theme }) => theme.contactUs.red};
 `;
-
+//data follow model
 interface IList {
   data: IContactDescription;
 }

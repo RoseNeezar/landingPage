@@ -2,6 +2,7 @@
 import React, { FC } from "react";
 import styled from "styled-components";
 
+//check if hover then show 1st child and translate second child
 const ListLayout = styled.div`
   border-right: 0.1px solid hsla(0, 0%, 100%, 0.16);
   &:hover > :nth-child(1) {
